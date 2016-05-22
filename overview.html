@@ -1,0 +1,103 @@
+<html>
+   <head>
+      <title>Project Blizzard</title>
+      <style>
+         header{
+            background-image: url("images/backround.jpg");
+            color: white;
+            text-align: center;
+            padding: 10px;
+         }
+
+         section{
+            width: 1000px;
+            float: left;
+            padding: 30px;
+         }
+
+         nav{
+            line-height: 30px;
+            background-image: url("images/backround.jpg");
+            height: 400px;
+            width: 130px;
+            float: left;
+            padding: 10px;
+         }
+         
+         .button{
+            background-color: white; 
+            border: none;
+            color: black;
+            width: 4em;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+         }
+         
+         .button:hover{
+            background-color: grey; 
+            color: white;
+         }
+      </style>
+   </head>
+   
+   <body>
+      <header>
+         <h1> <b> Project Blizzard </b> </h1>
+      </header>
+
+      <nav>
+        <a href = "#" class = "button" onclick = "goToSim()"> Simulation </a>  
+        <c href = "#" class = "button" onclick = "goToSpc()"> Feautures </c>
+        <d href = "#" class = "button" onclick = "goToNam()"> Members    </d>
+        <e href = "#" class = "button" onclick = "goToHme()"> Back       </e>
+
+         <script>
+            function goToSim(){
+               location.href = "simulator.html"; //link to simulation
+            }
+
+            function goToSpc(){
+                location.href = "specs.html"; //link to specs/modifications
+            }
+            
+            function goToHme(){
+                location.href = "index.html"; //link back to home
+            }
+            
+            function goToNam(){
+                location.href = "members.html"; //link to team members
+            }
+         </script>
+      </nav>
+      
+      <section>
+          <h2> Project Overview </h2>
+         <p>
+            This project was developed for the Spring '16 CSCE 315 class at TAMU by Joseph Townsend, Jonathan Wang, Brandon Donohue
+            and John Austin Moreno. It was written using HTML and Javascript and consists of a 3D simulation of the events that happen in 
+            the novel given above (with some slight adjustments).
+         </p>  
+         <b>Original Story</b><br>
+         <p>
+            Earth's moon has exploded into 7 different large pieces and continue to orbit around it. Occasionally the pieces will collide with another and produce smaller fragments called 
+            <b> bolides </b> and begin to fall towards Earth. These bolides are no threat because they are small enough to be destroyed in the Earth's atmosphere, but over time, the collisions become more
+            frequent and soon the Earth's sky is filled with these bolides. Then, the larger fragments begin 
+            to impact Earth and its surface is destoryed and its oceans are evaporated. 
+         </p>
+         <p>
+            In attempts to save the population, Earth's nations send <b> Arklets </b> containing 1552 humans from the population into orbit. These Arklets stay close to the international space station, <b> Izzy </b>, which protects them from the bolids. The Parabulator is the management system used by Izzy that monitors incoming bolides and issues commands to the Arklets to avoid any collisions to protect the human race.
+         </p> 
+      </section>
+      
+      
+      
+      <canvas id="canvas"></canvas>
+   </body>
+</html>

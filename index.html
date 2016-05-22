@@ -1,0 +1,94 @@
+<html>
+   <head>
+      <title>Project Blizzard</title>
+      <style>
+         header{
+            background-image: url("images/backround.jpg");
+            color: white;
+            text-align: center;
+            padding: 10px;
+         }
+
+         section{
+            width: 1000px;
+            float: left;
+            padding: 30px;
+         }
+
+         nav{
+            line-height: 30px;
+            background-image: url("images/backround.jpg");
+            height: 300px;
+            width: 130px;
+            float: left;
+            padding: 10px;
+         }
+         
+         .button{
+            background-color: white; 
+            border: none;
+            color: black;
+            width: 4em;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+         }
+         
+         .button:hover{
+            background-color: grey; 
+            color: white;
+         }
+      </style>
+   </head>
+   
+   <body>
+      <header>
+         <h1> <b> Project Blizzard </b> </h1>
+      </header>
+
+      <nav>
+        <a href = "#" class = "button" onclick = "goToSim()"> Simulation   </a>  
+        <c href = "#" class = "button" onclick = "goToOvr()"> Overview     </c>
+        <d href = "#" class = "button" onclick = "goToSpc()"> Feautures    </d>
+        <e href = "#" class = "button" onclick = "goToNam()"> Members      </e>
+
+         <script>
+            function goToSim(){
+               location.href = "simulator.html"; //link to simulation
+            }
+            
+            function goToOvr(){
+                location.href = "overview.html"; //link to project overview
+            }
+            
+            function goToSpc(){
+                location.href = "specs.html"; //link to specs/modifications
+            }
+            
+            function goToNam(){
+                location.href = "members.html"; //link to team members
+            }
+         </script>
+      </nav>
+      
+      <section>
+         <h1> Welcome to Project Blizzard </h1>
+         <p>
+            This is a 3D simulation of the Parambulator created by Neal Stephenson in his novel <b> "Seveneves: A Novel" </b> using
+            HTML and Javascript. All work was completed by Joseph Townsend, Jonathan Wang, Brandon Donohue and John Austin Moreno.
+         </p>
+         <br>
+         <center>
+            <img src = "images/title.jpg" alt = "Title"> <br>
+         </center>
+      </section>
+      
+      <canvas id="canvas"></canvas>
+   </body>
+</html>

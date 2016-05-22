@@ -1,0 +1,111 @@
+<html>
+   <head>
+      <title>Project Blizzard</title>
+      <style>
+         header{
+            background-image: url("images/backround.jpg");
+            color: white;
+            text-align: center;
+            padding: 10px;
+         }
+
+         section{
+            width: 1000px;
+            float: left;
+            padding: 30px;
+         }
+
+         nav{
+            line-height: 30px;
+            background-image: url("images/backround.jpg");
+            height: 400px;
+            width: 130px;
+            float: left;
+            padding: 10px;
+         }
+         
+         .button{
+            background-color: white; 
+            border: none;
+            color: black;
+            width: 4em;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+         }
+         
+         .button:hover{
+            background-color: grey; 
+            color: white;
+         }
+      </style>
+   </head>
+   
+   <body>
+      <header>
+         <h1> <b> Project Blizzard </b> </h1>
+      </header>
+
+      <nav>
+        <a href = "#" class = "button" onclick = "goToSim()"> Simulation </a>  
+        <c href = "#" class = "button" onclick = "goToOvr()"> Overview   </c>
+        <d href = "#" class = "button" onclick = "goToNam()"> Members    </d>
+        <e href = "#" class = "button" onclick = "goToHme()"> Back       </e>
+
+         <script>
+            function goToSim(){
+               location.href = "simulator.html"; //link to simulation
+            }
+            
+            function goToOvr(){
+                location.href = "overview.html"; //link to project overview
+            }
+            
+            function goToHme(){
+                location.href = "index.html"; //link back to home
+            }
+            
+            function goToNam(){
+                location.href = "members.html"; //link to team members
+            }
+         </script>
+      </nav>
+      
+      <section>
+         <h3> Our Features </h3>
+         <p>
+            In the navigation bar, we have a universe setting which controls different aspects of the universe. <br>
+            <center> <img src = "images/settings.png" alt = "Universe Settings"></center>
+         </p>
+         
+         <p>
+            We decided to change a few aspects of the story to fit our project. We gave Izzy a kind of "shield" that, upon collision with a bolide, would protect Izzy and destory the bolide. There is 
+            also a counter above Izzy that shows how many Arklets are remaining. <br> 
+            <center>
+               <img src = "images/counter.jpg" alt = "Izzy Counter"> <br>
+            </center>
+         </p>
+         <p>
+            The Arklets follow closely behind Izzy and if just a single bolide collides with an Arklet, both it and the bolide will be destroyed. <br>
+            In addition, the counter will update how many arklets are left.<br>
+            <center>
+               <img src = "images/arklets.jpg" alt = "Arklets"> <br>
+            </center>
+         </p>
+         
+         <p>
+            Once all the arklets have been destroyed (counter will display 0), every object will dissapear except a text displaying the amount of seconds Izzy and Arklets survived for.<br>
+            <center> <img src = "images/end.png" alt = "Ending"></center>
+         </p>
+         
+      </section>
+       
+    <canvas id="canvas"></canvas>
+   </body>
+</html>

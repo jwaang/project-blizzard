@@ -1,0 +1,123 @@
+<html>
+   <head>
+      <title>Project Blizzard</title>
+      <style>
+         header{
+            background-image: url("images/backround.jpg");
+            color: white;
+            text-align: center;
+            padding: 10px;
+         }
+
+         section{
+            width: 1000px;
+            float: left;
+            padding: 30px;
+         }
+
+         nav{
+            line-height: 30px;
+            background-image: url("images/backround.jpg");
+            height: 400px;
+            width: 130px;
+            float: left;
+            padding: 10px;
+         }
+
+         .button{
+            background-color: white;
+            border: none;
+            color: black;
+            width: 4em;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+         }
+
+         .button:hover{
+            background-color: grey;
+            color: white;
+         }
+      </style>
+   </head>
+
+   <body>
+      <header>
+         <h1> <b> Project Blizzard </b> </h1>
+      </header>
+
+      <nav>
+        <a href = "#" class = "button" onclick = "goToSim()"> Simulation </a>
+        <c href = "#" class = "button" onclick = "goToOvr()"> Overview </c>
+        <d href = "#" class = "button" onclick = "goToSpc()"> Feautures </d>
+        <e href = "#" class = "button" onclick = "goToHme()"> Back </e>
+
+         <script>
+            function goToSim(){
+               location.href = "simulator.html"; //link to simulation
+            }
+
+            function goToOvr(){
+                location.href = "overview.html"; //link to project overview
+            }
+
+            function goToSpc(){
+                location.href = "specs.html"; //link to specs/modifications
+            }
+
+            function goToHme(){
+                location.href = "index.html"; //link back to home
+            }
+         </script>
+      </nav>
+
+      <section>
+         <h1> Team Members </h1>
+         <p>
+            <a> <b> Joseph Townsend </b> </a>
+         </p>
+         <p>
+            <img src = "images/Joseph_pic.jpg" alt="Joseph" style = "width: 200px; height: 200px;"> <br>
+         </p>
+            Senior - computer Engineering
+            <br>
+         </p>
+         <br>
+         <p>
+            <c> <b> Jonathan Wang </b> </c>
+         </p>
+         <p>
+            <img src = "https://avatars1.githubusercontent.com/u/8783957?v=3&s=460" style="width: 200px; height: 200px";>
+            <br>
+            Sophomore - Computer Science
+         </p>
+         <br>
+         <p>
+            <d> <b> Brandon Donohue </b> </d>
+         </p>
+         <p>
+            <img src="images/brandon.jpg" alt="Brandon" style="width: 200px; height: 200px;"> <br>
+         </p>
+            Senior - Computer Engineering <br>
+            <br>
+           <br>
+         <p>
+            <e> <b> John Austin Moreno </b> </e>
+         </p>
+         <p>
+            <img src="images/JAM.jpg" alt="John" style="width: 200px; height: 200px;"> <br>
+         </p>
+            Senior - Computer Science
+            <br>
+            <br>
+      </section>
+
+    <canvas id="canvas"></canvas>
+   </body>
+</html>

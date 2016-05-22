@@ -1,0 +1,100 @@
+<html>
+   <head>
+      <title>Project Blizzard</title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>
+      <style type="text/css">
+         html, body, canvas {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+         }
+         nav.navbar {
+            margin-bottom: 0;
+         }
+         .dropdown-menu li {
+            padding: 0.5em;
+         }
+         li.divider {
+            padding: 0;
+         }
+         li.input-group .input-group-addon {
+            width: 10.5em;
+            text-align: right;
+         }
+         li.input-group .form-control {
+            width: 10em;
+         }
+      </style>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <script type="text/javascript" src="js/hand-1.2.js"></script>
+      <script type="text/javascript" src="js/babylon.2.3.js"></script>
+      <script type="text/javascript" src="js/cannon.js"></script>
+      <script type="text/javascript" src="js/scene.js"></script>
+      <script>
+      function goToHme(){
+                location.href = "index.html"; //link back to home
+            }
+      </script>      
+            
+   </head>
+   
+   <body>
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="navbar-brand">Simulator</div>
+      <ul class="nav navbar-nav">
+         <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Universe Settings<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               <li class="input-group">
+                  <span class="input-group-addon">Earth Size</span>
+                  <input type="number" class="form-control" name="earth_size" value="100"/>
+               </li>
+               <li class="input-group">
+                  <span class="input-group-addon">Number of Arklets</span>
+                  <input type="number" class="form-control" name="num_arklets" value="10"/>
+               </li>
+               <li class="input-group">
+                  <span class="input-group-addon">Bolide size</span>
+                  <input type="number" class="form-control" name="bolide_size" value="3"/>
+               </li>
+               <li class="input-group">
+                  <span class="input-group-addon">Bolide speed</span>
+                  <input type="number" class="form-control" name="bolide_speed" value="1"/>
+               </li>
+               <li class="input-group">
+                  <span class="input-group-addon">Bolide Spawn Rate</span>
+                  <input type="number" class="form-control" name="bolide_spawn_rate" value="500"/>
+               </li>
+               <li class="input-group">
+                  <span class="input-group-addon">Izzy Shield Size</span>
+                  <input type="number" class="form-control" name="izzy_shield_size" value="30"/>
+               </li>
+               <li class="input-group">
+                  <span class="input-group-addon">Arklet Upper Bound Box</span>
+                  <input type="number" class="form-control" name="arklet_upper_bound" value="40"/>
+               </li>
+               <li class="input-group">
+                  <span class="input-group-addon">Arklet Lower Bound Box</span>
+                  <input type="number" class="form-control" name="arklet_lower_bound" value="20"/>
+               </li>
+               <li class="input-group">
+                  <span class="input-group-addon">Arklet Size</span>
+                  <input type="number" class="form-control" name="arklet_size" value="1"/>
+               </li>
+               <li class="divider"></li>
+               <li>
+                  <button type="button" class="btn btn-default" id="restart">Restart</button>
+                  <button type="button" class="btn btn-default" id="back" onclick = "goToHme()">Back</button> <!--need a back button to homescreen-->
+                  <label id="seconds">TIME: 0</label>
+               </li>
+            </ul>
+         </li>
+      </ul>
+      </nav>
+      <canvas id="canvas"></canvas>
+   </body>
+</html>
